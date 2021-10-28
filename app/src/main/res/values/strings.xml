@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RentaTeamTestTask</string>
+    <string name="text_for_tab_two">Тестовое задание для Rentateam</string>
+    <string name="item_users_tittle">Пользователи</string>
+    <string name="item_about_tittle">О программе</string>
+    <string name="snackbar_users_list_text">Не удалось загрузить=(</string>
+    <string name="snackbar_users_list_action">Повторить</string>
 </resources>

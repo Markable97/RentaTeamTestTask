@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project/RentaTeamTestTask/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Project/RentaTeamTestTask/app/src/main/res/layout/fragent_users_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Project/RentaTeamTestTask/app/src/main/res/layout/fragment_about_program.xml" value="0.20416666666666666" />
+        <entry key="..\:/Project/RentaTeamTestTask/app/src/main/res/layout/fragment_user_detail.xml" value="0.25" />
+        <entry key="..\:/Project/RentaTeamTestTask/app/src/main/res/layout/recycler_item_user.xml" value="0.32669322709163345" />
+        <entry key="..\:/Project/RentaTeamTestTask/app/src/main/res/layout/toolbar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Project/RentaTeamTestTask/app/src/main/res/menu/menu_app.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
