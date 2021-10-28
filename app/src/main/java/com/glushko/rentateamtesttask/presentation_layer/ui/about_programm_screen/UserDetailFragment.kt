@@ -25,7 +25,11 @@ class UserDetailFragment: Fragment(R.layout.fragment_user_detail){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_user_detail, container, false);
+        return inflater.inflate(R.layout.fragment_user_detail, container, false);
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         val userDetail = arguments?.getParcelable<User>(EXTRA_USER_KEY)
         val imgView = view.findViewById<ImageView>(R.id.avatar)
         GlideApp.with(requireContext())
@@ -39,9 +43,6 @@ class UserDetailFragment: Fragment(R.layout.fragment_user_detail){
         view.findViewById<TextView>(R.id.tvEmailUser).apply {
             text = userDetail?.email
         }
-
-        return view
-
     }
 
 }

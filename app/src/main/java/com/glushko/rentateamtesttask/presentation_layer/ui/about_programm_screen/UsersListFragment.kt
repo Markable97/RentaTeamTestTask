@@ -20,7 +20,6 @@ import com.google.android.material.snackbar.Snackbar
 
 class UsersListFragment : Fragment() {
 
-    private var usersList = listOf<User>()
 
     lateinit var recycler: RecyclerView
     lateinit var adapter: UsersAdapter
@@ -52,19 +51,10 @@ class UsersListFragment : Fragment() {
         recycler = view.findViewById(R.id.recycler_users)
         recycler.layoutManager = LinearLayoutManager(activity)
         recycler.adapter = adapter
-
-
-    }
-
-    override fun onResume() {
-        super.onResume()
-        model.liveDataUser.observe(requireActivity(), Observer {
-            if(it.per_page != -1){
-                adapter.setList(it.data, it.per_page, it.data.size)
-            }else{
-
-            }
+        model.liveDataDatabase.observe(requireActivity(), Observer {
+            adapter.setList(it, 0, it.count())
         })
+
     }
 
 }

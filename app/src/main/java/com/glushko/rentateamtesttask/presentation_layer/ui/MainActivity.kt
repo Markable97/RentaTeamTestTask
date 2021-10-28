@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(bottomNavigate, navController)
         model = ViewModelProvider(this).get(UserViewModel::class.java)
 
-        model.liveDataUser.observe(this, Observer {
+        model.liveDataAPI.observe(this, Observer {
             progressBar.visibility = View.INVISIBLE
-            if(it.per_page == -1){
+            if(it == false){
                 Snackbar.make(bottomNavigate, getString(R.string.snackbar_users_list_text),Snackbar.LENGTH_LONG)
                     .setAction(getString(R.string.snackbar_users_list_action)){
                         model.getUsers()
